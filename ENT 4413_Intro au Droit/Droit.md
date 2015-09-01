@@ -84,7 +84,7 @@ Matériel : Ordinateur+Wifi+Trousse
 
 	- Rémunération
 	- Temps de travail
-	- Contrac-t de travail
+	- Contrat de travail
 	- Licenciement
 	- Hygiène et sécurité
 	- Santé et sécurité  
