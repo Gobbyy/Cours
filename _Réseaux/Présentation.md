@@ -21,6 +21,13 @@
 - [TCP/IP](#tcpip)
 	- [Les réseaux locaux](#les-rseaux-locaux)
 		- [Communication sur les réseaux locaux](#communication-sur-les-rseaux-locaux)
+		- [Trame Ethernet](#trame-ethernet)
+		- [Topologie des réseaux](#topologie-des-rseaux)
+		- [De Ethernet à IP](#de-ethernet-ip)
+		- [MAC vs IP](#mac-vs-ip)
+		- [Qu'est-ce qu'une adresse IPv4 ?](#quest-ce-quune-adresse-ipv4-)
+		- [Adresses remarquables](#adresses-remarquables)
+		- [ARP](#arp)
 <!-- /TOC -->
 
 # Rappels sur TCP/IP
@@ -217,3 +224,84 @@ Principe de communication :
 - Broadcast de la trame avec l'adresse MAC de la machine cible
 - Tous les équipements recoivent cette trame
 - Seule la machine cible traite l'information
+
+### Trame Ethernet
+
+![trame](http://igm.univ-mlv.fr/~dr/XPOSE2007/vlanparlegrandquinapascomprislesconsignes/trame8021Q.jpg)
+
+### Topologie des réseaux
+
+![reseau](http://www.ybet.be/hardware2_ch3/hard2ch3_2.gif)
+
+### De Ethernet à IP
+
+Problèmes à résoudre :
+
+- Communiquer avec tout le monde, n'importe où, n'importe comment
+- Accessible par tout le monde
+- Une machine doit pouvoir être identifiée par : un nom, une adresse unique, une route pour y accéder
+- Problématique des noms est résolu grâce au DNS
+
+### MAC vs IP
+
+Une adresse MAC identifie une interface sur un réseau local :
+
+- plus ou moins unique
+- c'est une adresse physique
+
+Une adresse IP identifie une machine sur un réseau :
+
+- aucune dépendance vis-à-vis du matériel
+- C'est une adresse logiqe
+
+On n'agit pas sur les mêmes couches des modèles OSI / TCP/IP
+
+
+### Qu'est-ce qu'une adresse IPv4 ?
+
+Une suite de 4 "mots" écrits en décimal
+
+Une adresse : 32 bits : 4 octets
+
+Une adresse : 4 octets entre 0 et 255
+
+Une paire (netid, hostid)
+
+netid identifie le réseau
+
+hostid identifie la machine sur le réseau
+
+### Adresses remarquables
+
+127.X.X.X (127.0.0.1) localhost
+
+Privé 10.0.0.0/8 192.168.0.0/16 non routés
+
+Adresse de broadcast : dernière adresse du réseau
+
+Le besoin :
+
+- la communication entre machines ne peut s'effectuer qu'à travers l'interface physique
+- Les applicatifs ne connaissant que des adresses IP, comment établir le lien adresse IP/ adresse physique
+- Les machines sur un réseau local ne communiquent que par Ethernet
+
+La solution : ARP
+
+Mise en place dans TCP/IP d'un protocole de bas niveau appelé ARP
+
+Rôle fournir à une machine donnée l'adresse physique d'une autre machine située sur le même réseau à partir de l'adresse IPv4 de la machine destinatrice
+
+La technique :
+
+- Diffusion d'adresse sur le réseau physique
+- La machine d'adresse IPv4 émet un message contenant son adresse physique
+- Les machines non concernées ne répondent pas
+- Gestion cache pour ne pas effectuer de requête ARP à chaque émission
+
+### ARP
+
+Naivement pour chaque paquet IPv4 on ferait un échange ARP
+
+Problème : traffic énorme
+
+Solution : chaque machine conserve les dernières transactions dans un cache (table ARP)
