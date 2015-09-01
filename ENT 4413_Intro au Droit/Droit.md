@@ -9,6 +9,7 @@
 	- [Introduction au programme par un brainstorming](#introduction-au-programme-par-un-brainstorming)
 	- [Programme](#programme)
 	- [Règles du jeu en cours et en TD](#rgles-du-jeu-en-cours-et-en-td)
+
 <!-- /TOC -->
 
 Présentation générale
@@ -111,3 +112,9 @@ Le droit du travail à l'épreuve des NTIC - J-E Ray
 Mémento Social - Francis Lefebvre
 
 Mémo social
+
+[Ministère du travail](http://www.travail-emploi.gouv.fr)
+
+[LegiFrance](http://www.legifrance.gouv.fr)
+
+[Cour de cassation](https://www.courdecassation.fr)
