@@ -74,3 +74,40 @@ Eteindre les portables
 Sourire et bonne humeur
 
 Matériel : Ordinateur+Wifi+Trousse
+
+## Notation
+
+50% Contrôle continu
+
+	 20% En groupe de 5/6 personnes. Faire une présentation orale sur un litige contentieux (cour de cassation) en droit du travail ayant lieu dans un grande entreprise (présentation orale 5min avec ppt + rapport sur word) :
+
+	- Rémunération
+	- Temps de travail
+	- Contrac-t de travail
+	- Licenciement
+	- Hygiène et sécurité
+	- Santé et sécurité  
+	- Accident du travail
+	- Droit syndical
+
+	 20% En groupe de 5/6 personnes. Rédaction d'un projet de contrat de travail CDI ou CDD
+
+	 10% Assiduité / participation / feedback
+
+50% Examen : QCM
+
+## Bibliographie
+
+Code du travail
+
+Droit du travail, droit Vivant - J-E Ray
+
+Droit du travail - J-M Verdier A Coeuret M-A Souriac
+
+Les tabous dans l'entreprise - P Arbouch et A Triclin
+
+Le droit du travail à l'épreuve des NTIC - J-E Ray
+
+Mémento Social - Francis Lefebvre
+
+Mémo social
