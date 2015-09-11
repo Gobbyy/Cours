@@ -14,3 +14,6 @@ Travail désigne :
 - le résultat de cette activité (un travail réussi)
 - l'emploi occupé (avoir un travail)
 - la collectivité des travailleurs (le travail face au capital)
+
+
+loi Auroux ina (3 aspects)
